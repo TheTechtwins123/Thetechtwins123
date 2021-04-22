@@ -1,0 +1,104 @@
+body, html{
+    min-height: 100vh;
+    width: auto;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(white);
+    text-align: center;
+}
+
+body{
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+    "nav"
+    "main"
+    "foot";
+    grid-template-rows: max-content auto max-content;
+}
+header{
+    grid-area: nav;
+    border-bottom: gray 2px solid;
+    background-color: black;
+}
+main{
+    grid-area:auto;
+    text-align: center;
+}
+footer{
+    border-top: solid 2px gray;
+    grid-area: auto;
+    background-color: black;
+    color: white;
+}
+.logo{
+    margin-top: 0;
+    max-width: 150px;
+    height: auto;
+}
+
+table{
+    border: black solid 2px;
+    padding: 5px;
+    text-align: center;
+    width: 100%;
+}
+table thead{
+    background-color: rgb(114, 137, 218);
+}
+table thead th{
+    padding: 5px;
+}
+table td{
+    border: darkslategray solid 1px;
+    border-radius: 250px;
+}
+table tr td:nth-last-child(1){
+    text-align: center;
+}
+table tr td:nth-child(1){
+    width: 100px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flex-item{
+    justify-content: center;
+    max-width: 500px;
+}
+.discord
+{
+    margin:0px ;
+    width: 50px;
+}
+ 
+.nav-item{
+    text-decoration: none;
+    margin: 0 10px;
+    color: white;
+    font: medium;
+}
+.nav-item:hover{
+    color: white;
+    border:white 2px solid;
+    transition: 1s border;
+    margin: 2 12px;
+    border:white 4px solid;
+    transition: 1s border;
+    margin: 4 14px;
+    border:black 6px solid;
+    transition: 1s border;
+    margin: 6 16px;
+    border:black 8px solid;
+    transition: 1s border;
+    margin: 8 18px;
+    border:black 10px solid;
+    transition: 1s border;
+    margin: 10 20px;
+    border:black 12px solid;
+    transition: 1s border;
+    margin: 12 22px;
+}
